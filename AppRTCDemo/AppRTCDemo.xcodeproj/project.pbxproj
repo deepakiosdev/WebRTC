@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		004EF99C1C88CA78009C8B2F /* APPRTCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF9811C88CA78009C8B2F /* APPRTCAppDelegate.m */; };
-		004EF99D1C88CA78009C8B2F /* APPRTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF9841C88CA78009C8B2F /* APPRTCViewController.m */; };
-		004EF9A21C88CA78009C8B2F /* ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF98E1C88CA78009C8B2F /* ARDUtilities.m */; };
 		004EF9A41C88CA78009C8B2F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 004EF9911C88CA78009C8B2F /* Default.png */; };
-		004EF9A51C88CA78009C8B2F /* APPRTCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004EF9921C88CA78009C8B2F /* APPRTCViewController.xib */; };
-		004EF9A61C88CA78009C8B2F /* ResourceRules.plist in Resources */ = {isa = PBXBuildFile; fileRef = 004EF9931C88CA78009C8B2F /* ResourceRules.plist */; };
-		004EF9A71C88CA78009C8B2F /* RTCICECandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF9951C88CA78009C8B2F /* RTCICECandidate+JSON.m */; };
-		004EF9A81C88CA78009C8B2F /* RTCICEServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF9971C88CA78009C8B2F /* RTCICEServer+JSON.m */; };
-		004EF9A91C88CA78009C8B2F /* RTCMediaConstraints+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF9991C88CA78009C8B2F /* RTCMediaConstraints+JSON.m */; };
-		004EF9AA1C88CA78009C8B2F /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EF99B1C88CA78009C8B2F /* RTCSessionDescription+JSON.m */; };
+		005AC1231C89604100D076B5 /* ARDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC10B1C89604100D076B5 /* ARDAppDelegate.m */; };
+		005AC1241C89604100D076B5 /* ARDMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC10D1C89604100D076B5 /* ARDMainView.m */; };
+		005AC1251C89604100D076B5 /* ARDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC10F1C89604100D076B5 /* ARDMainViewController.m */; };
+		005AC1261C89604100D076B5 /* ARDStatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC1111C89604100D076B5 /* ARDStatsView.m */; };
+		005AC1271C89604100D076B5 /* ARDVideoCallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC1131C89604100D076B5 /* ARDVideoCallView.m */; };
+		005AC1281C89604100D076B5 /* ARDVideoCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC1151C89604100D076B5 /* ARDVideoCallViewController.m */; };
+		005AC1291C89604100D076B5 /* ic_call_end_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1171C89604100D076B5 /* ic_call_end_black_24dp.png */; };
+		005AC12A1C89604100D076B5 /* ic_call_end_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1181C89604100D076B5 /* ic_call_end_black_24dp@2x.png */; };
+		005AC12B1C89604100D076B5 /* ic_clear_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1191C89604100D076B5 /* ic_clear_black_24dp.png */; };
+		005AC12C1C89604100D076B5 /* ic_clear_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC11A1C89604100D076B5 /* ic_clear_black_24dp@2x.png */; };
+		005AC12D1C89604100D076B5 /* ic_switch_video_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC11B1C89604100D076B5 /* ic_switch_video_black_24dp.png */; };
+		005AC12E1C89604100D076B5 /* ic_switch_video_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC11C1C89604100D076B5 /* ic_switch_video_black_24dp@2x.png */; };
+		005AC12F1C89604100D076B5 /* iPhone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC11D1C89604100D076B5 /* iPhone5@2x.png */; };
+		005AC1301C89604100D076B5 /* iPhone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC11E1C89604100D076B5 /* iPhone6@2x.png */; };
+		005AC1311C89604100D076B5 /* iPhone6p@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC11F1C89604100D076B5 /* iPhone6p@3x.png */; };
+		005AC1321C89604100D076B5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1201C89604100D076B5 /* Roboto-Regular.ttf */; };
+		005AC1331C89604100D076B5 /* UIImage+ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC1221C89604100D076B5 /* UIImage+ARDUtilities.m */; };
+		005AC13E1C89624C00D076B5 /* NSString+StdString.mm in Sources */ = {isa = PBXBuildFile; fileRef = 005AC1361C89624C00D076B5 /* NSString+StdString.mm */; };
+		005AC1401C89624C00D076B5 /* NRTCCameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC1391C89624C00D076B5 /* NRTCCameraPreviewView.m */; };
+		005AC1411C89624C00D076B5 /* NRTCDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 005AC13B1C89624C00D076B5 /* NRTCDispatcher.m */; };
 		009E99011C88A34F008AC169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E99001C88A34F008AC169 /* main.m */; };
 		009E990A1C88A34F008AC169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009E99081C88A34F008AC169 /* Main.storyboard */; };
 		009E990C1C88A34F008AC169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009E990B1C88A34F008AC169 /* Assets.xcassets */; };
@@ -25,24 +36,37 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		004EF9801C88CA78009C8B2F /* APPRTCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPRTCAppDelegate.h; sourceTree = "<group>"; };
-		004EF9811C88CA78009C8B2F /* APPRTCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPRTCAppDelegate.m; sourceTree = "<group>"; };
-		004EF9821C88CA78009C8B2F /* AppRTCDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRTCDemo-Prefix.pch"; sourceTree = "<group>"; };
-		004EF9831C88CA78009C8B2F /* APPRTCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPRTCViewController.h; sourceTree = "<group>"; };
-		004EF9841C88CA78009C8B2F /* APPRTCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPRTCViewController.m; sourceTree = "<group>"; };
-		004EF98D1C88CA78009C8B2F /* ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDUtilities.h; sourceTree = "<group>"; };
-		004EF98E1C88CA78009C8B2F /* ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDUtilities.m; sourceTree = "<group>"; };
 		004EF9911C88CA78009C8B2F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		004EF9921C88CA78009C8B2F /* APPRTCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPRTCViewController.xib; sourceTree = "<group>"; };
-		004EF9931C88CA78009C8B2F /* ResourceRules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ResourceRules.plist; sourceTree = "<group>"; };
-		004EF9941C88CA78009C8B2F /* RTCICECandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCICECandidate+JSON.h"; sourceTree = "<group>"; };
-		004EF9951C88CA78009C8B2F /* RTCICECandidate+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCICECandidate+JSON.m"; sourceTree = "<group>"; };
-		004EF9961C88CA78009C8B2F /* RTCICEServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCICEServer+JSON.h"; sourceTree = "<group>"; };
-		004EF9971C88CA78009C8B2F /* RTCICEServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCICEServer+JSON.m"; sourceTree = "<group>"; };
-		004EF9981C88CA78009C8B2F /* RTCMediaConstraints+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCMediaConstraints+JSON.h"; sourceTree = "<group>"; };
-		004EF9991C88CA78009C8B2F /* RTCMediaConstraints+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCMediaConstraints+JSON.m"; sourceTree = "<group>"; };
-		004EF99A1C88CA78009C8B2F /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCSessionDescription+JSON.h"; sourceTree = "<group>"; };
-		004EF99B1C88CA78009C8B2F /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
+		005AC10A1C89604100D076B5 /* ARDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppDelegate.h; sourceTree = "<group>"; };
+		005AC10B1C89604100D076B5 /* ARDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppDelegate.m; sourceTree = "<group>"; };
+		005AC10C1C89604100D076B5 /* ARDMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMainView.h; sourceTree = "<group>"; };
+		005AC10D1C89604100D076B5 /* ARDMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMainView.m; sourceTree = "<group>"; };
+		005AC10E1C89604100D076B5 /* ARDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMainViewController.h; sourceTree = "<group>"; };
+		005AC10F1C89604100D076B5 /* ARDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMainViewController.m; sourceTree = "<group>"; };
+		005AC1101C89604100D076B5 /* ARDStatsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDStatsView.h; sourceTree = "<group>"; };
+		005AC1111C89604100D076B5 /* ARDStatsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDStatsView.m; sourceTree = "<group>"; };
+		005AC1121C89604100D076B5 /* ARDVideoCallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDVideoCallView.h; sourceTree = "<group>"; };
+		005AC1131C89604100D076B5 /* ARDVideoCallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDVideoCallView.m; sourceTree = "<group>"; };
+		005AC1141C89604100D076B5 /* ARDVideoCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDVideoCallViewController.h; sourceTree = "<group>"; };
+		005AC1151C89604100D076B5 /* ARDVideoCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDVideoCallViewController.m; sourceTree = "<group>"; };
+		005AC1171C89604100D076B5 /* ic_call_end_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_call_end_black_24dp.png; sourceTree = "<group>"; };
+		005AC1181C89604100D076B5 /* ic_call_end_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_call_end_black_24dp@2x.png"; sourceTree = "<group>"; };
+		005AC1191C89604100D076B5 /* ic_clear_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear_black_24dp.png; sourceTree = "<group>"; };
+		005AC11A1C89604100D076B5 /* ic_clear_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_clear_black_24dp@2x.png"; sourceTree = "<group>"; };
+		005AC11B1C89604100D076B5 /* ic_switch_video_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_switch_video_black_24dp.png; sourceTree = "<group>"; };
+		005AC11C1C89604100D076B5 /* ic_switch_video_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_switch_video_black_24dp@2x.png"; sourceTree = "<group>"; };
+		005AC11D1C89604100D076B5 /* iPhone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5@2x.png"; sourceTree = "<group>"; };
+		005AC11E1C89604100D076B5 /* iPhone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6@2x.png"; sourceTree = "<group>"; };
+		005AC11F1C89604100D076B5 /* iPhone6p@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6p@3x.png"; sourceTree = "<group>"; };
+		005AC1201C89604100D076B5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		005AC1211C89604100D076B5 /* UIImage+ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ARDUtilities.h"; sourceTree = "<group>"; };
+		005AC1221C89604100D076B5 /* UIImage+ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ARDUtilities.m"; sourceTree = "<group>"; };
+		005AC1351C89624C00D076B5 /* NSString+StdString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StdString.h"; sourceTree = "<group>"; };
+		005AC1361C89624C00D076B5 /* NSString+StdString.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+StdString.mm"; sourceTree = "<group>"; };
+		005AC1381C89624C00D076B5 /* NRTCCameraPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRTCCameraPreviewView.h; sourceTree = "<group>"; };
+		005AC1391C89624C00D076B5 /* NRTCCameraPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRTCCameraPreviewView.m; sourceTree = "<group>"; };
+		005AC13A1C89624C00D076B5 /* NRTCDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRTCDispatcher.h; sourceTree = "<group>"; };
+		005AC13B1C89624C00D076B5 /* NRTCDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRTCDispatcher.m; sourceTree = "<group>"; };
 		009E98FC1C88A34F008AC169 /* AppRTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009E99001C88A34F008AC169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		009E99091C88A34F008AC169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +90,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005AC1161C89604100D076B5 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				005AC1171C89604100D076B5 /* ic_call_end_black_24dp.png */,
+				005AC1181C89604100D076B5 /* ic_call_end_black_24dp@2x.png */,
+				005AC1191C89604100D076B5 /* ic_clear_black_24dp.png */,
+				005AC11A1C89604100D076B5 /* ic_clear_black_24dp@2x.png */,
+				005AC11B1C89604100D076B5 /* ic_switch_video_black_24dp.png */,
+				005AC11C1C89604100D076B5 /* ic_switch_video_black_24dp@2x.png */,
+				005AC11D1C89604100D076B5 /* iPhone5@2x.png */,
+				005AC11E1C89604100D076B5 /* iPhone6@2x.png */,
+				005AC11F1C89604100D076B5 /* iPhone6p@3x.png */,
+				005AC1201C89604100D076B5 /* Roboto-Regular.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		005AC1341C89624C00D076B5 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				005AC1351C89624C00D076B5 /* NSString+StdString.h */,
+				005AC1361C89624C00D076B5 /* NSString+StdString.mm */,
+				005AC1381C89624C00D076B5 /* NRTCCameraPreviewView.h */,
+				005AC1391C89624C00D076B5 /* NRTCCameraPreviewView.m */,
+				005AC13A1C89624C00D076B5 /* NRTCDispatcher.h */,
+				005AC13B1C89624C00D076B5 /* NRTCDispatcher.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
 		009E98F31C88A34D008AC169 = {
 			isa = PBXGroup;
 			children = (
@@ -87,24 +141,23 @@
 		009E98FE1C88A34F008AC169 /* AppRTCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				004EF9801C88CA78009C8B2F /* APPRTCAppDelegate.h */,
-				004EF9811C88CA78009C8B2F /* APPRTCAppDelegate.m */,
-				004EF9821C88CA78009C8B2F /* AppRTCDemo-Prefix.pch */,
-				004EF9831C88CA78009C8B2F /* APPRTCViewController.h */,
-				004EF9841C88CA78009C8B2F /* APPRTCViewController.m */,
-				004EF98D1C88CA78009C8B2F /* ARDUtilities.h */,
-				004EF98E1C88CA78009C8B2F /* ARDUtilities.m */,
+				005AC1341C89624C00D076B5 /* objc */,
+				005AC10A1C89604100D076B5 /* ARDAppDelegate.h */,
+				005AC10B1C89604100D076B5 /* ARDAppDelegate.m */,
+				005AC10C1C89604100D076B5 /* ARDMainView.h */,
+				005AC10D1C89604100D076B5 /* ARDMainView.m */,
+				005AC10E1C89604100D076B5 /* ARDMainViewController.h */,
+				005AC10F1C89604100D076B5 /* ARDMainViewController.m */,
+				005AC1101C89604100D076B5 /* ARDStatsView.h */,
+				005AC1111C89604100D076B5 /* ARDStatsView.m */,
+				005AC1121C89604100D076B5 /* ARDVideoCallView.h */,
+				005AC1131C89604100D076B5 /* ARDVideoCallView.m */,
+				005AC1141C89604100D076B5 /* ARDVideoCallViewController.h */,
+				005AC1151C89604100D076B5 /* ARDVideoCallViewController.m */,
+				005AC1161C89604100D076B5 /* resources */,
+				005AC1211C89604100D076B5 /* UIImage+ARDUtilities.h */,
+				005AC1221C89604100D076B5 /* UIImage+ARDUtilities.m */,
 				004EF9911C88CA78009C8B2F /* Default.png */,
-				004EF9921C88CA78009C8B2F /* APPRTCViewController.xib */,
-				004EF9931C88CA78009C8B2F /* ResourceRules.plist */,
-				004EF9941C88CA78009C8B2F /* RTCICECandidate+JSON.h */,
-				004EF9951C88CA78009C8B2F /* RTCICECandidate+JSON.m */,
-				004EF9961C88CA78009C8B2F /* RTCICEServer+JSON.h */,
-				004EF9971C88CA78009C8B2F /* RTCICEServer+JSON.m */,
-				004EF9981C88CA78009C8B2F /* RTCMediaConstraints+JSON.h */,
-				004EF9991C88CA78009C8B2F /* RTCMediaConstraints+JSON.m */,
-				004EF99A1C88CA78009C8B2F /* RTCSessionDescription+JSON.h */,
-				004EF99B1C88CA78009C8B2F /* RTCSessionDescription+JSON.m */,
 				009E99081C88A34F008AC169 /* Main.storyboard */,
 				009E990B1C88A34F008AC169 /* Assets.xcassets */,
 				009E990D1C88A34F008AC169 /* LaunchScreen.storyboard */,
@@ -200,11 +253,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				009E990F1C88A34F008AC169 /* LaunchScreen.storyboard in Resources */,
+				005AC12B1C89604100D076B5 /* ic_clear_black_24dp.png in Resources */,
+				005AC1321C89604100D076B5 /* Roboto-Regular.ttf in Resources */,
+				005AC1291C89604100D076B5 /* ic_call_end_black_24dp.png in Resources */,
 				009E990C1C88A34F008AC169 /* Assets.xcassets in Resources */,
-				004EF9A61C88CA78009C8B2F /* ResourceRules.plist in Resources */,
+				005AC1301C89604100D076B5 /* iPhone6@2x.png in Resources */,
+				005AC12D1C89604100D076B5 /* ic_switch_video_black_24dp.png in Resources */,
+				005AC12E1C89604100D076B5 /* ic_switch_video_black_24dp@2x.png in Resources */,
+				005AC12A1C89604100D076B5 /* ic_call_end_black_24dp@2x.png in Resources */,
+				005AC12C1C89604100D076B5 /* ic_clear_black_24dp@2x.png in Resources */,
 				009E990A1C88A34F008AC169 /* Main.storyboard in Resources */,
 				004EF9A41C88CA78009C8B2F /* Default.png in Resources */,
-				004EF9A51C88CA78009C8B2F /* APPRTCViewController.xib in Resources */,
+				005AC12F1C89604100D076B5 /* iPhone5@2x.png in Resources */,
+				005AC1311C89604100D076B5 /* iPhone6p@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,14 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				004EF99C1C88CA78009C8B2F /* APPRTCAppDelegate.m in Sources */,
-				004EF9A71C88CA78009C8B2F /* RTCICECandidate+JSON.m in Sources */,
+				005AC1241C89604100D076B5 /* ARDMainView.m in Sources */,
+				005AC1411C89624C00D076B5 /* NRTCDispatcher.m in Sources */,
+				005AC13E1C89624C00D076B5 /* NSString+StdString.mm in Sources */,
+				005AC1271C89604100D076B5 /* ARDVideoCallView.m in Sources */,
+				005AC1331C89604100D076B5 /* UIImage+ARDUtilities.m in Sources */,
+				005AC1251C89604100D076B5 /* ARDMainViewController.m in Sources */,
 				009E99011C88A34F008AC169 /* main.m in Sources */,
-				004EF9A81C88CA78009C8B2F /* RTCICEServer+JSON.m in Sources */,
-				004EF9AA1C88CA78009C8B2F /* RTCSessionDescription+JSON.m in Sources */,
-				004EF9A21C88CA78009C8B2F /* ARDUtilities.m in Sources */,
-				004EF99D1C88CA78009C8B2F /* APPRTCViewController.m in Sources */,
-				004EF9A91C88CA78009C8B2F /* RTCMediaConstraints+JSON.m in Sources */,
+				005AC1281C89604100D076B5 /* ARDVideoCallViewController.m in Sources */,
+				005AC1261C89604100D076B5 /* ARDStatsView.m in Sources */,
+				005AC1401C89624C00D076B5 /* NRTCCameraPreviewView.m in Sources */,
+				005AC1231C89604100D076B5 /* ARDAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -369,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -381,10 +445,13 @@
 			baseConfigurationReference = ED2F745D613CE99BDCE49E23 /* Pods-AppRTCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codiant.AppRTCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -393,10 +460,13 @@
 			baseConfigurationReference = 9A7948FCDE3FCF826365147F /* Pods-AppRTCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codiant.AppRTCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

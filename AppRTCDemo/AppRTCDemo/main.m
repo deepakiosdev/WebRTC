@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "APPRTCAppDelegate.h"
+#import "ARDAppDelegate.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([APPRTCAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ARDAppDelegate class]));
+
     }
 }
