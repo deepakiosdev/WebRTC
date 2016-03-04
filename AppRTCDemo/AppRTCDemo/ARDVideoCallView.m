@@ -41,7 +41,9 @@ static CGFloat const kStatusBarHeight = 20;
     _remoteVideoView.delegate = self;
     [self addSubview:_remoteVideoView];
 
-    _localVideoView = [[NRTCCameraPreviewView alloc] initWithFrame:CGRectZero];
+   // _localVideoView = [[NRTCCameraPreviewView alloc] initWithFrame:CGRectZero];
+      _localVideoView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectZero];
+      _localVideoView.delegate = self;
     [self addSubview:_localVideoView];
 
     _statsView = [[ARDStatsView alloc] initWithFrame:CGRectZero];

@@ -129,14 +129,19 @@
   if (_localVideoTrack == localVideoTrack) {
     return;
   }
+  [_localVideoTrack removeRenderer:_videoCallView.localVideoView];
   _localVideoTrack = nil;
-  _localVideoTrack = localVideoTrack;
-  RTCAVFoundationVideoSource *source = nil;
+  /*RTCAVFoundationVideoSource *source = nil;
   if ([localVideoTrack.source
           isKindOfClass:[RTCAVFoundationVideoSource class]]) {
     source = (RTCAVFoundationVideoSource*)localVideoTrack.source;
   }
-  _videoCallView.localVideoView.captureSession = source.captureSession;
+  _videoCallView.localVideoView.captureSession = source.captureSession;*/
+    
+    [_videoCallView.localVideoView renderFrame:nil];
+    _localVideoTrack = localVideoTrack;
+
+    [_localVideoTrack addRenderer:_videoCallView.localVideoView];
 }
 
 - (void)setRemoteVideoTrack:(RTCVideoTrack *)remoteVideoTrack {

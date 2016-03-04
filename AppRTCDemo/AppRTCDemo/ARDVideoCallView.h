@@ -34,8 +34,10 @@
 @interface ARDVideoCallView : UIView
 
 @property(nonatomic, readonly) UILabel *statusLabel;
-@property(nonatomic, readonly) NRTCCameraPreviewView *localVideoView;
+//@property(nonatomic, readonly) NRTCCameraPreviewView *localVideoView;
 @property(nonatomic, readonly) RTCEAGLVideoView *remoteVideoView;
+@property(nonatomic, readonly) RTCEAGLVideoView *localVideoView;
+
 @property(nonatomic, readonly) ARDStatsView *statsView;
 @property(nonatomic, weak) id<ARDVideoCallViewDelegate> delegate;
 
