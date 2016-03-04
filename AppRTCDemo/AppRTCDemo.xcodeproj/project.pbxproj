@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005AC14E1C89CC3800D076B5 /* ic_call_end_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1441C89CC3800D076B5 /* ic_call_end_black_24dp.png */; };
+		005AC14F1C89CC3800D076B5 /* ic_call_end_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1451C89CC3800D076B5 /* ic_call_end_black_24dp@2x.png */; };
+		005AC1501C89CC3800D076B5 /* ic_clear_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1461C89CC3800D076B5 /* ic_clear_black_24dp.png */; };
+		005AC1511C89CC3800D076B5 /* ic_clear_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1471C89CC3800D076B5 /* ic_clear_black_24dp@2x.png */; };
+		005AC1521C89CC3800D076B5 /* ic_switch_video_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1481C89CC3800D076B5 /* ic_switch_video_black_24dp.png */; };
+		005AC1531C89CC3800D076B5 /* ic_switch_video_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC1491C89CC3800D076B5 /* ic_switch_video_black_24dp@2x.png */; };
+		005AC1541C89CC3800D076B5 /* iPhone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC14A1C89CC3800D076B5 /* iPhone5@2x.png */; };
+		005AC1551C89CC3800D076B5 /* iPhone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC14B1C89CC3800D076B5 /* iPhone6@2x.png */; };
+		005AC1561C89CC3800D076B5 /* iPhone6p@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005AC14C1C89CC3800D076B5 /* iPhone6p@3x.png */; };
+		005AC1571C89CC3800D076B5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 005AC14D1C89CC3800D076B5 /* Roboto-Regular.ttf */; };
 		009E99011C88A34F008AC169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E99001C88A34F008AC169 /* main.m */; };
 		009E99041C88A34F008AC169 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E99031C88A34F008AC169 /* AppDelegate.m */; };
 		009E99071C88A34F008AC169 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009E99061C88A34F008AC169 /* ViewController.m */; };
@@ -17,6 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005AC1441C89CC3800D076B5 /* ic_call_end_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_call_end_black_24dp.png; sourceTree = "<group>"; };
+		005AC1451C89CC3800D076B5 /* ic_call_end_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_call_end_black_24dp@2x.png"; sourceTree = "<group>"; };
+		005AC1461C89CC3800D076B5 /* ic_clear_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear_black_24dp.png; sourceTree = "<group>"; };
+		005AC1471C89CC3800D076B5 /* ic_clear_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_clear_black_24dp@2x.png"; sourceTree = "<group>"; };
+		005AC1481C89CC3800D076B5 /* ic_switch_video_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_switch_video_black_24dp.png; sourceTree = "<group>"; };
+		005AC1491C89CC3800D076B5 /* ic_switch_video_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_switch_video_black_24dp@2x.png"; sourceTree = "<group>"; };
+		005AC14A1C89CC3800D076B5 /* iPhone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5@2x.png"; sourceTree = "<group>"; };
+		005AC14B1C89CC3800D076B5 /* iPhone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6@2x.png"; sourceTree = "<group>"; };
+		005AC14C1C89CC3800D076B5 /* iPhone6p@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6p@3x.png"; sourceTree = "<group>"; };
+		005AC14D1C89CC3800D076B5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		009E98FC1C88A34F008AC169 /* AppRTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009E99001C88A34F008AC169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		009E99021C88A34F008AC169 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +64,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005AC1431C89CC3800D076B5 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				005AC1441C89CC3800D076B5 /* ic_call_end_black_24dp.png */,
+				005AC1451C89CC3800D076B5 /* ic_call_end_black_24dp@2x.png */,
+				005AC1461C89CC3800D076B5 /* ic_clear_black_24dp.png */,
+				005AC1471C89CC3800D076B5 /* ic_clear_black_24dp@2x.png */,
+				005AC1481C89CC3800D076B5 /* ic_switch_video_black_24dp.png */,
+				005AC1491C89CC3800D076B5 /* ic_switch_video_black_24dp@2x.png */,
+				005AC14A1C89CC3800D076B5 /* iPhone5@2x.png */,
+				005AC14B1C89CC3800D076B5 /* iPhone6@2x.png */,
+				005AC14C1C89CC3800D076B5 /* iPhone6p@3x.png */,
+				005AC14D1C89CC3800D076B5 /* Roboto-Regular.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		009E98F31C88A34D008AC169 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +110,7 @@
 				009E990B1C88A34F008AC169 /* Assets.xcassets */,
 				009E990D1C88A34F008AC169 /* LaunchScreen.storyboard */,
 				009E99101C88A34F008AC169 /* Info.plist */,
+				005AC1431C89CC3800D076B5 /* resources */,
 				009E98FF1C88A34F008AC169 /* Supporting Files */,
 			);
 			path = AppRTCDemo;
@@ -163,9 +201,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005AC14F1C89CC3800D076B5 /* ic_call_end_black_24dp@2x.png in Resources */,
+				005AC1521C89CC3800D076B5 /* ic_switch_video_black_24dp.png in Resources */,
+				005AC1561C89CC3800D076B5 /* iPhone6p@3x.png in Resources */,
+				005AC1551C89CC3800D076B5 /* iPhone6@2x.png in Resources */,
+				005AC1501C89CC3800D076B5 /* ic_clear_black_24dp.png in Resources */,
+				005AC1541C89CC3800D076B5 /* iPhone5@2x.png in Resources */,
+				005AC1531C89CC3800D076B5 /* ic_switch_video_black_24dp@2x.png in Resources */,
 				009E990F1C88A34F008AC169 /* LaunchScreen.storyboard in Resources */,
 				009E990C1C88A34F008AC169 /* Assets.xcassets in Resources */,
 				009E990A1C88A34F008AC169 /* Main.storyboard in Resources */,
+				005AC1571C89CC3800D076B5 /* Roboto-Regular.ttf in Resources */,
+				005AC1511C89CC3800D076B5 /* ic_clear_black_24dp@2x.png in Resources */,
+				005AC14E1C89CC3800D076B5 /* ic_call_end_black_24dp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -337,7 +385,9 @@
 			baseConfigurationReference = ED2F745D613CE99BDCE49E23 /* Pods-AppRTCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codiant.AppRTCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,7 +399,9 @@
 			baseConfigurationReference = 9A7948FCDE3FCF826365147F /* Pods-AppRTCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codiant.AppRTCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

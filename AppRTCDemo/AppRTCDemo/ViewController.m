@@ -29,7 +29,7 @@
     [self.localView setDelegate:self];
     
     [self.client setServerHostUrl:@"https://apprtc.appspot.com"];
-    [self.client connectToRoomWithId:@"qwerty" options:nil];
+    [self.client connectToRoomWithId:@"qwerty11" options:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +48,8 @@
             break;
         case kARDAppClientStateDisconnected:
             NSLog(@"Client disconnected.");
-           // [self remoteDisconnected];
+            [self hangup];
+
             break;
     }
 }
@@ -69,6 +70,20 @@
 
 - (void)videoView:(RTCEAGLVideoView *)videoView didChangeVideoSize:(CGSize)size {
     /* resize self.localView or self.remoteView based on the size returned */
+}
+
+
+- (void)hangup {
+    self.remoteVideoTrack = nil;
+    self.localVideoTrack = nil;
+    [_client disconnect];
+    
+}
+- (IBAction)btnEndCAll_Action:(id)sender {
+    [self hangup];
+}
+
+- (IBAction)btnSwitchCamera_Action:(id)sender {
 }
 
 @end

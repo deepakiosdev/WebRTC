@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -29,16 +29,46 @@
                                     <constraint firstAttribute="width" constant="150" id="xwo-eS-sT2"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A08-Pf-KuU">
+                                <rect key="frame" x="270" y="500" width="45" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Z3V-gM-64I"/>
+                                    <constraint firstAttribute="height" constant="45" id="bRg-5E-N49"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ic_call_end_black_24dp.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEndCAll_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk9-gI-0N7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-at-aAr">
+                                <rect key="frame" x="197" y="500" width="45" height="45"/>
+                                <color key="backgroundColor" red="0.92941176891326904" green="0.38431373238563538" blue="0.30196079611778259" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5r9-u4-IZn"/>
+                                    <constraint firstAttribute="width" constant="45" id="iPH-aZ-4aE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ic_switch_video_black_24dp.png"/>
+                                <connections>
+                                    <action selector="btnSwitchCamera_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqm-Fo-8Ei"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3PH-KN-S5C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lal-QC-Lyu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3PH-KN-S5C" secondAttribute="bottom" id="MDO-rK-8an"/>
+                            <constraint firstItem="A08-Pf-KuU" firstAttribute="leading" secondItem="FuU-at-aAr" secondAttribute="trailing" constant="28" id="Ns3-2Z-E3p"/>
                             <constraint firstAttribute="trailing" secondItem="3PH-KN-S5C" secondAttribute="trailing" id="PIv-rf-wIr"/>
                             <constraint firstItem="3PH-KN-S5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QlT-hh-OXW"/>
+                            <constraint firstAttribute="trailing" secondItem="A08-Pf-KuU" secondAttribute="trailing" constant="5" id="Tp7-Ua-gpz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FuU-at-aAr" secondAttribute="bottom" constant="23" id="dr9-l9-yQd"/>
                             <constraint firstItem="3PH-KN-S5C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qg2-z3-hkp"/>
                             <constraint firstItem="Fc6-1j-qbI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ueV-2y-jld"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fc6-1j-qbI" secondAttribute="bottom" id="vMx-te-5cW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A08-Pf-KuU" secondAttribute="bottom" constant="23" id="xy5-Do-bjY"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -52,4 +82,8 @@
             <point key="canvasLocation" x="320" y="290"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_call_end_black_24dp.png" width="24" height="24"/>
+        <image name="ic_switch_video_black_24dp.png" width="24" height="24"/>
+    </resources>
 </document>
