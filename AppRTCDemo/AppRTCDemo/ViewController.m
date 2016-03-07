@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblStatus;
 @property (strong, nonatomic) ARDAppClient *client;
 @property (strong, nonatomic) IBOutlet RTCEAGLVideoView *remoteView;
 @property (strong, nonatomic) IBOutlet RTCEAGLVideoView *localView;
@@ -20,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     self.client = [[ARDAppClient alloc] initWithDelegate:self];
     
@@ -29,12 +29,17 @@
     [self.localView setDelegate:self];
     
     [self.client setServerHostUrl:@"https://apprtc.appspot.com"];
-    [self.client connectToRoomWithId:@"qwerty11" options:nil];
+    [self.client connectToRoomWithId:self.roomName options:nil];
+    self.lblStatus.text = [NSString stringWithFormat:@"Connecting to %@...",self.roomName];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"%s",__FUNCTION__);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -42,6 +47,7 @@
     switch (state) {
         case kARDAppClientStateConnected:
             NSLog(@"Client connected.");
+            self.lblStatus.hidden = YES;
             break;
         case kARDAppClientStateConnecting:
             NSLog(@"Client connecting.");
@@ -66,6 +72,8 @@
 
 - (void)appClient:(ARDAppClient *)client didError:(NSError *)error {
     /* Handle the error */
+    [self showAlertWithMessage:error.localizedDescription];
+    [self hangup];
 }
 
 - (void)videoView:(RTCEAGLVideoView *)videoView didChangeVideoSize:(CGSize)size {
@@ -77,6 +85,7 @@
     self.remoteVideoTrack = nil;
     self.localVideoTrack = nil;
     [_client disconnect];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 - (IBAction)btnEndCAll_Action:(id)sender {
@@ -86,4 +95,13 @@
 - (IBAction)btnSwitchCamera_Action:(id)sender {
 }
 
+
+- (void)showAlertWithMessage:(NSString*)message {
+    UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                        message:message
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alertView show];
+}
 @end

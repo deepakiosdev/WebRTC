@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fqw-fL-u3j">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--HomeVC-->
+        <scene sceneID="SjC-Sn-YMy">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="fqw-fL-u3j" customClass="HomeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1zu-jg-gAi"/>
+                        <viewControllerLayoutGuide type="bottom" id="frV-mT-aqH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UpJ-EG-mbK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2d-AL-EZT">
+                                <rect key="frame" x="113" y="195" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NRa-bH-3mC"/>
+                                    <constraint firstAttribute="width" constant="94" id="olT-sa-KEM"/>
+                                </constraints>
+                                <state key="normal" title="Call"/>
+                                <connections>
+                                    <action selector="btnCall_Action:" destination="fqw-fL-u3j" eventType="touchUpInside" id="0DB-sC-dp7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Room Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-ka-Ydk">
+                                <rect key="frame" x="20" y="101" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pbt-kZ-xr8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gwD-ka-Ydk" firstAttribute="leading" secondItem="UpJ-EG-mbK" secondAttribute="leading" constant="20" id="Flr-kv-tEV"/>
+                            <constraint firstItem="gwD-ka-Ydk" firstAttribute="top" secondItem="1zu-jg-gAi" secondAttribute="bottom" constant="81" id="G62-tE-9sn"/>
+                            <constraint firstItem="b2d-AL-EZT" firstAttribute="top" secondItem="gwD-ka-Ydk" secondAttribute="bottom" constant="64" id="dJY-mS-Vry"/>
+                            <constraint firstItem="b2d-AL-EZT" firstAttribute="centerX" secondItem="UpJ-EG-mbK" secondAttribute="centerX" id="iTd-D8-8oe"/>
+                            <constraint firstAttribute="trailing" secondItem="gwD-ka-Ydk" secondAttribute="trailing" constant="20" id="pU4-kQ-jIk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="txfRoomName" destination="gwD-ka-Ydk" id="2Jm-ac-9zw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFt-eU-6ir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="328"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +71,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-at-aAr">
+                                <rect key="frame" x="197" y="500" width="45" height="45"/>
+                                <color key="backgroundColor" red="0.92941176891326904" green="0.38431373238563538" blue="0.30196079611778259" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5r9-u4-IZn"/>
+                                    <constraint firstAttribute="width" constant="45" id="iPH-aZ-4aE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ic_switch_video_black_24dp.png"/>
+                                <connections>
+                                    <action selector="btnSwitchCamera_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqm-Fo-8Ei"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVL-sa-GKk">
+                                <rect key="frame" x="20" y="100" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UNg-PE-tWs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fc6-1j-qbI" customClass="RTCEAGLVideoView">
                                 <rect key="frame" x="0.0" y="418" width="150" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.42384178321678323" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,28 +114,19 @@
                                     <action selector="btnEndCAll_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk9-gI-0N7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-at-aAr">
-                                <rect key="frame" x="197" y="500" width="45" height="45"/>
-                                <color key="backgroundColor" red="0.92941176891326904" green="0.38431373238563538" blue="0.30196079611778259" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="5r9-u4-IZn"/>
-                                    <constraint firstAttribute="width" constant="45" id="iPH-aZ-4aE"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="ic_switch_video_black_24dp.png"/>
-                                <connections>
-                                    <action selector="btnSwitchCamera_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqm-Fo-8Ei"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aVL-sa-GKk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Ce6-cf-8VE"/>
                             <constraint firstItem="3PH-KN-S5C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lal-QC-Lyu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3PH-KN-S5C" secondAttribute="bottom" id="MDO-rK-8an"/>
                             <constraint firstItem="A08-Pf-KuU" firstAttribute="leading" secondItem="FuU-at-aAr" secondAttribute="trailing" constant="28" id="Ns3-2Z-E3p"/>
                             <constraint firstAttribute="trailing" secondItem="3PH-KN-S5C" secondAttribute="trailing" id="PIv-rf-wIr"/>
                             <constraint firstItem="3PH-KN-S5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QlT-hh-OXW"/>
                             <constraint firstAttribute="trailing" secondItem="A08-Pf-KuU" secondAttribute="trailing" constant="5" id="Tp7-Ua-gpz"/>
+                            <constraint firstAttribute="trailing" secondItem="aVL-sa-GKk" secondAttribute="trailing" constant="20" id="Wxy-xG-czb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FuU-at-aAr" secondAttribute="bottom" constant="23" id="dr9-l9-yQd"/>
+                            <constraint firstItem="aVL-sa-GKk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="iAA-oh-0mL"/>
                             <constraint firstItem="3PH-KN-S5C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qg2-z3-hkp"/>
                             <constraint firstItem="Fc6-1j-qbI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ueV-2y-jld"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fc6-1j-qbI" secondAttribute="bottom" id="vMx-te-5cW"/>
@@ -73,13 +135,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="lblStatus" destination="aVL-sa-GKk" id="QhW-Uu-OF5"/>
                         <outlet property="localView" destination="Fc6-1j-qbI" id="C0c-D5-4AY"/>
                         <outlet property="remoteView" destination="3PH-KN-S5C" id="Z83-sc-6iG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="320" y="290"/>
+            <point key="canvasLocation" x="529" y="322"/>
         </scene>
     </scenes>
     <resources>

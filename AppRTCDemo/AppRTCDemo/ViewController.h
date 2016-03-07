@@ -11,6 +11,7 @@
 #import <AppRTC/ARDAppClient.h>
 
 @interface ViewController :  UIViewController <ARDAppClientDelegate, RTCEAGLVideoViewDelegate>
+@property (strong, nonatomic) NSString *roomName;
 
 
 @end
